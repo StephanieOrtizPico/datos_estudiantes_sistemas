@@ -9,4 +9,7 @@
 ![DatosPadre1](datospadre1.png "Versión 1, Datos del Padre")
 
 ## Primera versión "Datos de la Madre"
-![DatosMadre1](datosmadre1.png "Versión 1, Datos del Madre")
+![DatosMadre1](datosmadre1.png "Versión 1, Datos de la Madre")
+
+## Primera versión "Datos del Acudiente"
+![DatosAcudiente1](datosacudiente1.png "Versión 1, Datos del Acudiente")

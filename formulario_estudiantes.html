@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Estudiantil</title>
+</head>
+<body>
+    <h2>Formulario Estudiantil</h2>
+    <h3>Datos del Estudiante</h3>
+    <form id="studentForm" onsubmit="return validarFormulario()">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" required><br><br>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br><br>
+        
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required><br><br>
+        
+        <label for="lugarNacimiento">Lugar de Nacimiento:</label>
+        <input type="text" id="lugarNacimiento" required><br><br>
+        
+        <label for="tipoDocumento">Tipo de Documento de Identidad:</label>
+        <select id="tipoDocumento" required>
+            <option value="TI">T.I</option>
+            <option value="CC">C.C</option>
+        </select><br><br>
+        
+        <label for="numeroDocumento">Número del Documento de Identidad:</label>
+        <input type="text" id="numeroDocumento" required><br><br>
+        
+        <label for="lugarExpedicion">Lugar de Expedición del Documento de Identidad:</label>
+        <input type="text" id="lugarExpedicion" required><br><br>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" required><br><br>
+        
+        <label for="barrio">Barrio:</label>
+        <input type="text" id="barrio" required><br><br>
+        
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" required><br><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" required><br><br>
+        
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" required><br><br>
+        
+        <label for="emailPersonal">E-mail Personal:</label>
+        <input type="email" id="emailPersonal" required><br><br>
+        
+        <label for="emailInstitucional">E-mail Institucional:</label>
+        <input type="email" id="emailInstitucional" required><br><br>
+        
+        <label for="tipoSangre">Tipo de Sangre:</label>
+        <input type="text" id="tipoSangre" required><br><br>
+        
+        <label for="eps">EPS:</label>
+        <input type="text" id="eps" required><br><br>
+        
+        <label for="enfermedad">¿Sufre de alguna enfermedad?</label>
+        <select id="enfermedad" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+        
+        <label for="enfermedadCual">¿Cuál enfermedad?</label>
+        <input type="text" id="enfermedadCual"><br><br>
+        
+        <label for="estrato">Estrato Socioeconómico:</label>
+        <input type="text" id="estrato" required><br><br>
+        
+        <label for="familiasEnAccion">Familias en Acción:</label>
+        <select id="familiasEnAccion" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+        
+        <label for="religion">Tipo de Religión:</label>
+        <input type="text" id="religion" required><br><br>
+        
+        <label for="relacionPadres">Relación de Padres:</label>
+        <select id="relacionPadres" required>
+            <option value="casados">Casados</option>
+            <option value="divorciados">Divorciados</option>
+            <option value="unionLibre">Unión Libre</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+        
+        <label for="computadoraCasa">¿Computadora en casa?</label>
+        <select id="computadoraCasa" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+        
+        <label for="internetCasa">¿Internet en casa?</label>
+        <select id="internetCasa" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function validarFormulario() {
+            // Validaciones adicionales pueden ser agregadas aquí según sea necesario
+            
+            // Validar correo electrónico personal
+            var emailPersonal = document.getElementById("emailPersonal").value;
+            if (!validarCorreo(emailPersonal)) {
+                alert("Por favor, introduce un correo electrónico personal válido.");
+                return false;
+            }
+
+            // Validar correo electrónico institucional
+            var emailInstitucional = document.getElementById("emailInstitucional").value;
+            if (!validarCorreo(emailInstitucional)) {
+                alert("Por favor, introduce un correo electrónico institucional válido.");
+                return false;
+            }
+
+            return true;
+        }
+
+        function validarCorreo(email) {
+            // Expresión regular para validar correo electrónico
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+    </script>
+</body>
+</html>

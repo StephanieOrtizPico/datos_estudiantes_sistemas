@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Estudiantil</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Formulario Estudiantil</h2>
-    <h3>Datos del Estudiante</h3>
+    <div class="franja-superior">
+        <div class="imagen-superior"></div>
+    </div>
+
+    <div class="franja-con-texto">
+        <p>Formulario Estudiantil</p>
+    </div>
+
+    <div class="franja-con-texto2">
+        <p>Datos del Estudiante</p>
+    </div>
+
     <form id="studentForm" onsubmit="return validarFormulario()">
         <label for="apellidos">Apellidos:</label>
         <input type="text" id="apellidos" required><br><br>
@@ -108,7 +119,10 @@
         <label for="propositosExpectativas">¿Cuáles son sus propósitos y expectativas personales y académicas como estudiante de la Especialidad en Sistemas?</label><br>
         <textarea id="propositosExpectativas" rows="4" cols="50" required></textarea><br><br>
 
-        <h3>Datos del Padre</h3>
+        <div class="franja-con-texto2">
+            <p>Datos del Padre</p>
+        </div>
+
         <label for="apellidosPadre">Apellidos:</label>
         <input type="text" id="apellidosPadre" required><br><br>
         
@@ -133,7 +147,10 @@
         <label for="ocupacionPadre">Ocupación:</label>
         <input type="text" id="ocupacionPadre" required><br><br>
 
-        <h3>Datos de la Madre</h3>
+        <div class="franja-con-texto2">
+            <p>Datos de la Madre</p>
+        </div>
+
         <label for="apellidosMadre">Apellidos:</label>
         <input type="text" id="apellidosMadre" required><br><br>
         
@@ -158,7 +175,10 @@
         <label for="ocupacionMadre">Ocupación:</label>
         <input type="text" id="ocupacionMadre" required><br><br>
 
-        <h3>Datos del Acudiente</h3>
+        <div class="franja-con-texto2">
+            <p>Datos del Acudiente</p>
+        </div>
+
         <label for="apellidosAcudiente">Apellidos:</label>
         <input type="text" id="apellidosAcudiente" required><br><br>
         

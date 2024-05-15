@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Franja superior */
+.franja-superior {
+    background: linear-gradient(to bottom left, #001aff 50%, #e5ff00 50%);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    margin: 15px 15px 15px
+}
+
+/* Franja superior */
+.franja-superior p {
+    margin-right: 40px;
+}
+
+/* Menú superior */
+.menu-superior {
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin: 15px
+}
+
+/* Franja con texto */
+.franja-con-texto {
+    background-color: #001aff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 10px; /* Márgenes de 20px arriba/abajo y 15px a cada lado */
+}
+
+/* Estilos de la franja con texto */
+.franja-con-texto2 {
+    background-color: #fffb00;
+    color: #000000;
+    padding: 5px;
+    text-align: left;
+    font-size: 20px;
+    margin: 10px
+}

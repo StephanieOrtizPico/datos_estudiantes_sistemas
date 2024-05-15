@@ -6,7 +6,8 @@
 
 /* Franja superior */
 .franja-superior {
-    background: linear-gradient(to bottom left, #001aff 50%, #e5ff00 50%);
+    background-color: #fffb00;
+    background: linear-gradient(to bottom left, #001aff 50%, #fffb00 50%);
     color: #fff;
     padding: 60px 0;
     text-align: center;
